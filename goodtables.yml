@@ -1,6 +1,9 @@
 files:
-    schema: schema.1.json
+    schema: https://jardinsdelavallee.alkante.com/scripts/suiviactivite/schema.1.json
     format: csv
     encoding: utf-8
-    skip_rows: 3
     delimiter: ';'
+    
+# validate a limited number of rows or -1 for all rows
+settings:
+  row_limit: -1
