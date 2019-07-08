@@ -3,4 +3,4 @@ files:
     format: csv
     encoding: utf-8
     skip_rows: 3
-    delimiter: '  '
+    delimiter: ';'
