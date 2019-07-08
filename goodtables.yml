@@ -1,9 +1,0 @@
-files:
-#    schema: schema.1.json
-#    format: csv
-#    encoding: utf-8
-#    delimiter: ';'
-    
-# validate a limited number of rows or -1 for all rows
-settings:
-  row_limit: -1
