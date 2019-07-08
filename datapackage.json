@@ -3,7 +3,8 @@
   "title": "My dataset",
   "resources": [
     {
-      "name": "my-data",
+      "name": "my-data",      
+      "path": "exemple_fichier_invalide.csv",
       "schema": {
         "fields": [
           {
