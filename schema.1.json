@@ -1,0 +1,279 @@
+{
+  "$schema": "https://frictionlessdata.io/schemas/table-schema.json",
+  "name": "Fichier d'import des clients et chantiers",
+  "title": "Import de chantiers dans l'application de suivi activité",
+  "description": "Spécification du modèle de données relatif aux chantiers dans l'application suivi activité",
+  "countryCode": "FR",
+  "homepage": "https://www.alkante.com",
+  "path": "https://jardinsdelavallee.alkante.com/scripts/suiviactivite/schema.json",
+  "resources": [
+    {
+      "title": "Exemple de fichier d'import valide",
+      "path": "https://jardinsdelavallee.alkante.com/scripts/suiviactivite/exemple_fichier_valide.csv"
+    },
+    {
+      "title": "Exemple de fichier d'import invalide",
+      "path": "https://jardinsdelavallee.alkante.com/scripts/suiviactivite/exemple_fichier_invalide.csv"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Alkante",
+      "path": "https://www.alkante.com"
+    }
+  ],
+  "created": "2019-07-01",
+  "lastModified": "2019-07-01",
+  "version": "1.0.0",
+  "contributors": [
+    {
+      "title": "Alexandre Saintilan",
+      "organisation": "Alkante",
+      "email": "a.saintilan@alkante.com",
+      "role": "author"
+    }
+  ],
+  "fields": [
+    {
+      "name": "client",
+      "title": "Nom du client",
+      "description": "Nom du client.",
+      "type": "string",
+      "example": "DUPONT",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "rais_soc",
+      "title": "Raison sociale du client",
+      "description": "Raison sociale du client",
+      "type": "string",
+      "example": "DUPONT",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "adresse_1",
+      "title": "Adresse du client",
+      "description": "Adresse sociale du client",
+      "type": "string",
+      "example": "DUPONT",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "adresse_2",
+      "title": "Complément d'adresse 1 du client",
+      "description": "Complément d'adresse 1 du client",
+      "type": "string",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "adresse_3",
+      "title": "Complément d'adresse 2 du client",
+      "description": "Complément d'adresse 2 du client",
+      "type": "string",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "code_post",
+      "title": "Code postal du client",
+      "description": "Code postal du client",
+      "type": "string",
+      "example": "35000",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "ville",
+      "title": "Ville du client",
+      "description": "Ville du client",
+      "type": "string",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "telephone",
+      "title": "Numéro de téléphone du client",
+      "description": "Numéro de téléphone du client",
+      "type": "string",
+      "example": "0299222570",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "telephone1",
+      "title": "Numéro de téléphone mobile du client",
+      "description": "Numéro de téléphone mobile du client",
+      "type": "string",
+      "example": "0299222570",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "e_mail",
+      "title": "Adresse mail du client",
+      "description": "Adresse mail du client",
+      "type": "email",
+      "example": "client@yahoo.fr",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "commercial",
+      "title": "Nom du commercial en charge du client",
+      "description": "Nom du commercial en charge du client",
+      "type": "string",
+      "example": "MARTIN",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "commande",
+      "title": "Numéro de commande",
+      "description": "Numéro de commande",
+      "type": "string",
+      "example": "AB123456",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "Reference",
+      "title": "Nom du chantier",
+      "description": "Nom du chantier",
+      "type": "string",
+      "example": "Taille des haies",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "ch_adresse_1",
+      "title": "Adresse du client",
+      "description": "Adresse du client",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "ch_adresse_2",
+      "title": "Complément d'adresse 3 du client",
+      "description": "Complément d'adresse 3 du client",
+      "type": "string",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "ch_adresse_3",
+      "title": "Complément d'adresse 2 du client",
+      "description": "Complément d'adresse 2 du client",
+      "type": "string",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "ch_code_post",
+      "title": "Code postal du chantier",
+      "description": "Code postal du chantier",
+      "type": "string",
+      "example": "35000",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "ch_ville",
+      "title": "Ville du chantier",
+      "description": "Ville du chantier",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "interlocuteur chantier",
+      "title": "Nom du contact chez le client",
+      "description": "Nom du contact chez le client",
+      "type": "string",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "tel interlocuteur",
+      "title": "Numéro de téléphone du contact chez le client",
+      "description": "Numéro de téléphone du contact chez le client",
+      "type": "string",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "date debut",
+      "title": "Date de début du chantier",
+      "description": "Date de début du chantier", 
+      "type": "date",
+      "example": "01/01/2019",
+      "format": "%d/%m/%Y",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "date fin",
+      "title": "Date de fin du chantier",
+      "description": "Date de définbut du chantier",
+      "type": "date",
+      "example": "01/01/2019",
+      "format": "%d/%m/%Y",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "lot",
+      "title": "Code du lot (unique par chantier)",
+      "description": "Code du lot (unique par chantier)",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "nomlot",
+      "title": "Nom du lot",
+      "description": "Nom du lot",
+      "type": "string",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "temps oper",
+      "title": "Temps prévu en heure pour le du lot (unique par chantier)",
+      "description": "Code du lot (unique par chantier)",
+      "type": "integer",
+      "constraints": {
+        "required": false,
+        "minimum": 1
+      }
+    }
+  ]
+}
