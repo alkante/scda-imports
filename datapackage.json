@@ -98,7 +98,7 @@
             "name": "e_mail",
             "title": "Adresse mail du client",
             "description": "Adresse mail du client",
-            "type": "email",
+            "type": "string",
             "example": "client@yahoo.fr",
             "constraints": {
               "required": false
