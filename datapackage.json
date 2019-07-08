@@ -102,7 +102,8 @@
             "type": "string",
             "example": "client@yahoo.fr",
             "constraints": {
-              "required": false
+              "required": false,
+              "pattern": "(\\w+@[a-zA-Z0_9_]+?\\.[a-zA-Z]{2,6}"
             }
           },
           {
