@@ -1,5 +1,5 @@
 files:
-    schema: schema.1.json
+#    schema: schema.1.json
 #    format: csv
 #    encoding: utf-8
 #    delimiter: ';'
