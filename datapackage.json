@@ -81,7 +81,8 @@
             "type": "string",
             "example": "0299222570",
             "constraints": {
-              "required": false
+              "required": false,
+              "pattern": "^\\d{10}$"
             }
           },
           {
