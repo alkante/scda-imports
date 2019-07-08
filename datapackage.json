@@ -4,7 +4,7 @@
   "resources": [
     {
       "name": "my-data",      
-      "path": "exemple_fichier_invalide.csv",
+      "path": "exemple_fichier_valide.csv",
       "schema": {
         "fields": [
           {
